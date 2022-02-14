@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hehehe :)</title>
+  <link rel="stylesheet" type="text/css" href= "style.css">
+ <div class="container">
+    <h1 class="neonText">Happy Valentine's Day</h1>
+    <h2 class="neonText">I  L o v e  Y o u</h2> 
+ </div>
+</head>
+<style>
+.neonText {
+  color: #fff;
+}
+
+h1 {
+  font-family: Redressed;
+  font-size: 4.2rem;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: fixed;      
+  top: 40px;
+  left: 300px;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(2, 122, 82),
+      0 0 80px rgb(2, 122, 82),
+      0 0 90px rgb(2, 122, 82),
+      0 0 100px rgb(2, 122, 82),
+      0 0 150px rgb(2, 122, 82);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+  
+h2 {
+ font-size: 1.8rem;
+ text-align: center;
+ text-transform: uppercase;
+ font-weight: 400;
+ letter-spacing: 2px;
+ position: fixed;     
+ bottom:70px;
+ right: 550px; 
+}
+.container {
+  margin-top: 20vh;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #010a01;
+}  
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background: #0b1522;
+}
+.heart{
+    height: 100px;
+    width: 100px;
+    background: #f20044;
+    position: relative;
+    transform:rotate(-45deg) ;
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart{
+    0%{
+        transform:rotate(-45deg) scale(1.07) ;
+    }
+
+    80%{
+        transform:rotate(-45deg) scale(1.0) ;
+    }
+    100%{
+        transform:rotate(-45deg) scale(0.8) ;
+    }
+
+}
+.heart::before{
+    content : '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+
+.heart::after{
+    content : '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+
+</style>
+    <body>
+        <div class="heart"></div>
+    </body>
+</html>
